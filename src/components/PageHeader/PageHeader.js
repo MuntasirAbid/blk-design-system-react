@@ -1,21 +1,6 @@
-/*!
 
-=========================================================
-* BLK Design System React - v1.2.2
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/blk-design-system-react
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/blk-design-system-react/blob/main/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
+import etherum from "../../assets/img/png-transparent-ethereum-eth-hd-logo-thumbnail.png"
 
 // reactstrap components
 import { Container } from "reactstrap";
@@ -31,13 +16,18 @@ export default function PageHeader() {
       <div className="squares square6" />
       <div className="squares square7" />
       <Container>
-        <div className="content-center brand">
-          <h1 className="h1-seo">BLK• React</h1>
+
+        <div className=" brand">
+          <h1 className="h1-seo">BILLION DOLLAR MEME INDUSTRY</h1>
           <h3 className="d-none d-sm-block">
-            A beautiful Design System for Bootstrap 4 (reactstrap) and React.
-            It's Free and Open Source.
+            Transforming Meme Communities into Marketing Titans! Create, Sell, and Dominate with Unique NFTs on Our Exclusive Marketplace – Your Gateway to Fun, Engagement, and Profit!
           </h3>
         </div>
+
+        <div className="ethImg">
+          <img src={etherum} alt="" />
+        </div>
+
       </Container>
     </div>
   );

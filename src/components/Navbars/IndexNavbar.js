@@ -1,22 +1,6 @@
-/*!
-
-=========================================================
-* BLK Design System React - v1.2.2
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/blk-design-system-react
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/blk-design-system-react/blob/main/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
 import { Link } from "react-router-dom";
+import logo from "../../assets/img/robotBullsLogo.webp"
 // reactstrap components
 import {
   Button,
@@ -35,6 +19,7 @@ import {
   Col,
   UncontrolledTooltip,
 } from "reactstrap";
+
 
 export default function IndexNavbar() {
   const [collapseOpen, setCollapseOpen] = React.useState(false);
@@ -79,11 +64,11 @@ export default function IndexNavbar() {
       <Container>
         <div className="navbar-translate">
           <NavbarBrand to="/" tag={Link} id="navbar-brand">
-            <span>BLK• </span>
-            Design System React
+            <img src={logo} alt="" />
+
           </NavbarBrand>
           <UncontrolledTooltip placement="bottom" target="navbar-brand">
-            Designed and Coded by Creative Tim
+            Designed and Coded by RobotBulls web team
           </UncontrolledTooltip>
           <button
             aria-expanded={collapseOpen}
@@ -106,7 +91,7 @@ export default function IndexNavbar() {
             <Row>
               <Col className="collapse-brand" xs="6">
                 <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                  BLK•React
+                  BILLION DOLLAR MEME INDUSTRY
                 </a>
               </Col>
               <Col className="collapse-close text-right" xs="6">
@@ -124,7 +109,31 @@ export default function IndexNavbar() {
             <NavItem className="p-0">
               <NavLink
                 data-placement="bottom"
-                href="https://twitter.com/CreativeTim"
+                href=""
+                rel="noopener noreferrer"
+                target=""
+                title="aboutUs"
+              >
+                <i className="" />
+                <p className="">About Us</p>
+              </NavLink>
+            </NavItem>
+            <NavItem className="p-0">
+              <NavLink
+                data-placement="bottom"
+                href=""
+                rel="noopener noreferrer"
+                target=""
+                title="aboutUs"
+              >
+                <i className="" />
+                <p className="">Marketplace</p>
+              </NavLink>
+            </NavItem>
+            <NavItem className="p-0">
+              <NavLink
+                data-placement="bottom"
+                href=""
                 rel="noopener noreferrer"
                 target="_blank"
                 title="Follow us on Twitter"
@@ -136,7 +145,7 @@ export default function IndexNavbar() {
             <NavItem className="p-0">
               <NavLink
                 data-placement="bottom"
-                href="https://www.facebook.com/CreativeTim"
+                href=""
                 rel="noopener noreferrer"
                 target="_blank"
                 title="Like us on Facebook"
@@ -148,7 +157,7 @@ export default function IndexNavbar() {
             <NavItem className="p-0">
               <NavLink
                 data-placement="bottom"
-                href="https://www.instagram.com/CreativeTimOfficial"
+                href=""
                 rel="noopener noreferrer"
                 target="_blank"
                 title="Follow us on Instagram"
@@ -188,25 +197,7 @@ export default function IndexNavbar() {
                 </DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
-            <NavItem>
-              <Button
-                className="nav-link d-none d-lg-block"
-                color="primary"
-                target="_blank"
-                href="https://www.creative-tim.com/product/blk-design-system-pro-react?ref=bdsr-user-archive-index-navbar-upgrade-pro"
-              >
-                <i className="tim-icons icon-spaceship" /> Upgrade to PRO
-              </Button>
-            </NavItem>
-            <NavItem>
-              <Button
-                className="nav-link d-none d-lg-block"
-                color="default"
-                onClick={scrollToDownload}
-              >
-                <i className="tim-icons icon-cloud-download-93" /> Download
-              </Button>
-            </NavItem>
+
           </Nav>
         </Collapse>
       </Container>
